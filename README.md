@@ -1,16 +1,17 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# omega-orion-assignment
 
-Currently, two official plugins are available:
+Setup Instructions
+     • Installation: Created React app using "npm create vite@latest" and installed the necessary dependencies, including React Router, Tailwind CSS, and Lucide React.
+     • Execution: Started the development server by running  npm run dev (Vite) to view the application on localhost.
+     • Build: Used Netlify for hosting the Project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack Used
+    • Frontend: Build with React for a component-based architecture and React Router Dom for managing dashboard sub-routes.
+    • Styling:  UsedTailwind CSS to handle the flexible grid system, custom rounded "island" UI, and smooth sidebar  transitions.
+    • Icons & Logic: Utilized Lucide React for modern iconography and React Hooks to manage real-time search filtering and layout states.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Any Assumptions Made
+ • Layout Flow: Assumed a fixed sidebar on desktop that "pushes" content, requiring a dynamic margin to ensure the Navbar and   People grid occupy 100% of the remaining screen.
+ • Data Structure: Modeled the employee list as a local array of 16 objects, assuming unique IDs are provided for the search and mapping functions.
+ • Responsiveness: Assumed the UI should transition from a 5-column grid on ultra-wide screens to a single-column list on mobile for optimal readability.
